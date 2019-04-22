@@ -1,0 +1,218 @@
+@import "../../../assets/sass/scss/gradient-variables";
+
+:host /deep/ .ct-grid{
+    stroke-dasharray: 0px;
+    stroke: rgba(0, 0, 0, 0.1);
+}
+
+:host /deep/ .ct-label{
+    font-size: 0.9rem;
+}
+
+
+// Widget area 4 Chart CSS Starts
+
+:host /deep/ .WidgetAreaChart4 .ct-series-a .ct-area {
+    fill-opacity: 1;
+    fill:url($analytics-gradient-path +  #wGradient4) !important;
+}
+
+:host /deep/ .WidgetAreaChart4 .ct-series-a .ct-line{
+    stroke-width: 0px;
+}
+
+
+:host /deep/ .WidgetAreaChart4 .ct-series-a .ct-point-circle {     
+    fill:#fa394e;stroke-width:5;stroke: #fff; 
+ }
+ 
+ :host /deep/ .WidgetAreaChart4 .ct-series-a .ct-point-circle-transperent {     
+    fill: transparent;
+ }
+
+ :host /deep/ .WidgetAreaChart4 .ct-target-line {
+    stroke: #fff;
+    stroke-width: 2px;
+    stroke-dasharray: 4px;
+  }
+
+  :host /deep/ .WidgetAreaChart4shadow {
+    -webkit-filter: drop-shadow( 0px -5px 2px rgba(0,0,0,0.2) );
+            filter: drop-shadow( 0px -5px 2px rgba(0,0,0,0.2) ); /* Same syntax as box-shadow, except 
+                                                       for the spread property */
+}
+
+
+// Widget area 4 Chart CSS Ends
+
+// Widget area 5 Chart CSS Starts
+
+:host /deep/ .WidgetAreaChart5 .ct-series-a .ct-area {
+    fill-opacity: 1;
+    fill:url($analytics-gradient-path +  #wGradient5) !important;
+}
+
+:host /deep/ .WidgetAreaChart5 .ct-series-a .ct-line{
+    stroke-width: 0px;
+}
+
+
+:host /deep/ .WidgetAreaChart5 .ct-series-a .ct-point-circle {     
+    fill:#6d3da7;stroke-width:5;stroke: #fff; 
+ }
+ 
+ :host /deep/ .WidgetAreaChart5 .ct-series-a .ct-point-circle-transperent {     
+    fill: transparent;
+ }
+
+ :host /deep/ .WidgetAreaChart5 .ct-target-line {
+    stroke: #fff;
+    stroke-width: 2px;
+    stroke-dasharray: 4px;
+  }
+
+  :host /deep/ .WidgetAreaChart5shadow {
+    -webkit-filter: drop-shadow( 0px -5px 2px rgba(0,0,0,0.2) );
+            filter: drop-shadow( 0px -5px 2px rgba(0,0,0,0.2) ); /* Same syntax as box-shadow, except 
+                                                       for the spread property */
+}
+
+
+// Widget area 5 Chart CSS Ends
+
+
+// Widget area 6 Chart CSS Starts
+
+:host /deep/ .WidgetAreaChart6 .ct-series-a .ct-area {
+    fill-opacity: 1;
+    fill:url($analytics-gradient-path +  #wGradient6) !important;
+}
+
+:host /deep/ .WidgetAreaChart6 .ct-series-a .ct-line{
+    stroke-width: 0px;
+}
+
+
+:host /deep/ .WidgetAreaChart6 .ct-series-a .ct-point-circle {     
+    fill:#6d64f3;stroke-width:5;stroke: #fff; 
+ }
+ 
+ :host /deep/ .WidgetAreaChart6 .ct-series-a .ct-point-circle-transperent {     
+    fill: transparent;
+ }
+
+ :host /deep/ .WidgetAreaChart6 .ct-target-line {
+    stroke: #fff;
+    stroke-width: 2px;
+    stroke-dasharray: 4px;
+  }
+
+  :host /deep/ .WidgetAreaChart6shadow {
+    -webkit-filter: drop-shadow( 0px -5px 2px rgba(0,0,0,0.2) );
+            filter: drop-shadow( 0px -5px 2px rgba(0,0,0,0.2) ); /* Same syntax as box-shadow, except 
+                                                       for the spread property */
+}
+
+
+// Widget area 6 Chart CSS Ends
+
+  // Line area chart CSS Starts
+
+  :host /deep/ .lineAreaChart .ct-series-a .ct-area {
+    fill-opacity: 0.7;
+    fill: url($analytics-gradient-path +  #laGradient1) !important;
+}
+
+:host /deep/ .lineAreaChart .ct-series-b .ct-area {
+    fill: url($analytics-gradient-path +  #laGradient) !important;
+    fill-opacity: 0.9;
+}
+
+// :host /deep/ .lineAreaChart .ct-series-b .ct-area {
+//     fill: #ff8d60;
+//     fill-opacity: 0.1;
+// }
+
+:host /deep/ .lineAreaChart .ct-line{
+    stroke-width: 0px;
+}
+:host /deep/ .lineAreaChart .ct-series-b .ct-point {
+    stroke-width: 0px;
+}
+
+
+:host /deep/ .lineAreaChart .ct-series-b{
+    .ct-point-circle {
+        // fill:url($analytics-gradient-path +  #laGradient);
+        display: none;
+        // stroke:#fff;
+    }
+    .ct-point-circle-transperent  {
+        // fill:url($analytics-gradient-path +  #laGradient);
+        display: none;
+        // stroke:#fff;
+    }
+} 
+
+:host /deep/ .lineAreaChart .ct-series-a .ct-point-circle {
+    fill:url($analytics-gradient-path +  #laGradient1);
+    stroke-width:3;
+    stroke:#fff;
+}
+
+:host /deep/  .lineAreaChartShadow{
+        -webkit-filter: drop-shadow( 0px -8px 4px rgba(0,0,0,0.2) );
+                filter: drop-shadow( 0px -8px 4px rgba(0,0,0,0.2) ); /* Same syntax as box-shadow, except 
+                                                           for the spread property */
+
+}
+
+:host /deep/ .lineAreaChart .ct-series-a .ct-point-circle-transperent {     
+    fill: transparent;
+ }
+
+
+// Line area chart CSS Ends
+
+//Line chart 2 CSS Starts
+
+
+
+:host /deep/ .lineChart2 .ct-series.ct-series-a .ct-line { stroke: url($analytics-gradient-path + #lineGradient1) !important; stroke-width: 3px; }
+:host /deep/ .lineChart2 .ct-series.ct-series-a .ct-circle{fill:url($analytics-gradient-path + #lineGradient1) !important;stroke-width:3;stroke:#fff;}
+
+:host /deep/ .lineChart2 .ct-series.ct-series-b .ct-line { stroke: url($analytics-gradient-path + #lineGradient2) !important; stroke-width: 3px; }
+:host /deep/ .lineChart2 .ct-series.ct-series-b .ct-circle{fill:url($analytics-gradient-path + #lineGradient2) !important;stroke-width:3;stroke:#fff;}
+
+
+:host /deep/ .lineChart2Shadow {
+    -webkit-filter: drop-shadow( 0px 14px 4px rgba(0,0,0,0.2) );
+            filter: drop-shadow( 0px 14px 4px rgba(0,0,0,0.2) ); /* Same syntax as box-shadow, except 
+                                                       for the spread property */
+}
+//Line chart 2 CSS Ends
+
+// LineArea Chart 6 CSS Starts
+:host /deep/ .lineArea6 .ct-series-a .ct-area {
+    fill-opacity: 1;
+    fill:url($analytics-gradient-path +  #gradient6) !important;
+}
+
+  
+:host /deep/ .lineArea6 .ct-series.ct-series-a .ct-line { stroke: url($analytics-gradient-path + #linear6) !important; stroke-width: 13px; }
+:host /deep/ .lineArea6 .ct-series.ct-series-a .ct-point-circle{fill:url($analytics-gradient-path + #linear6) !important;stroke-width:5;stroke:#fff;}
+    
+
+
+:host /deep/ .lineArea6 .ct-series-a .ct-point-circle-transperent {     
+   fill: transparent;
+}
+
+:host /deep/  .lineArea6Shadow{
+    -webkit-filter: drop-shadow( 0px -8px 4px rgba(0,0,0,0.2) );
+            filter: drop-shadow( 0px -8px 4px rgba(0,0,0,0.2) ); /* Same syntax as box-shadow, except 
+                                                       for the spread property */
+
+}
+
+// LineArea Chart 6 CSS Ends

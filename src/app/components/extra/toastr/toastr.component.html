@@ -1,0 +1,167 @@
+<!--Toastr Starts-->
+<section id="toastr">
+    <div class="row">
+        <div class="col-12 mt-3 mb-1">
+            <div class="content-header">Toastr</div>
+            <p class="content-sub-header"></p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-title-wrap bar-success">
+                <h4 class="card-title">Toast Config</h4>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="px-3">
+                <form class="form">
+                    <div class="form-body">
+                        <!-- <h4 class="form-section">
+                        Toast Config</h4> -->
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="projectinput1">Title</label>
+                                    <input [(ngModel)]="title" name="title" type="text" id="title" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="projectinput2">Body</label>
+                                    <textarea [(ngModel)]="body" name="body" id="body" rows="2" class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="projectinput2">Title max-length</label>
+                                    <input [(ngModel)]="titleMaxLength" name="titlemaxlen" type="text" id="titlemaxlen" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="projectinput1">Body max-length</label>
+                                    <input [(ngModel)]="bodyMaxLength" name="bodymaxlen" type="text" id="bodymaxlen" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="projectinput2">Timeout</label>
+                                    <input [(ngModel)]="timeout" name="timeout" type="number" id="timeout" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="projectinput2">Backdrop (0.0 - 1.0)</label>
+                                    <input [(ngModel)]="backdrop" name="backdrop" type="number" id="backdrop" class="form-control" min="-1" max="1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <div class="checkbox">
+                                        <div class="custom-control custom-checkbox m-0">
+                                            <input [(ngModel)]="newTop" name="newTop" id="newTop" type="checkbox" class="custom-control-input">
+                                            <label class="custom-control-label" for="newTop">New items on top?</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <div class="checkbox">
+                                        <div class="custom-control custom-checkbox m-0">
+                                            <input [(ngModel)]="progressBar" name="progressBar" id="progressBar" type="checkbox" class="custom-control-input">
+                                            <label class="custom-control-label" for="progressBar">Show progress bar?</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <div class="checkbox">
+                                        <div class="custom-control custom-checkbox m-0">
+                                            <input [(ngModel)]="closeClick" name="closeClick" id="closeClick" type="checkbox" class="custom-control-input">
+                                            <label class="custom-control-label" for="closeClick">Close on click?</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <div class="checkbox">
+                                        <div class="custom-control custom-checkbox m-0">
+                                            <input [(ngModel)]="pauseHover" name="pauseHover" id="pauseHover" type="checkbox" class="custom-control-input">
+                                            <label class="custom-control-label" for="pauseHover">Pause on hover?</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="position">Position</label>
+                                    <select [(ngModel)]="position" name="position" id="position" class="form-control">
+                                        <option [ngValue]="'leftTop'">LEFT - TOP</option>
+                                        <option [ngValue]="'leftCenter'">LEFT - CENTER</option>
+                                        <option [ngValue]="'leftBottom'">LEFT - BOTTOM</option>
+                                        <option [ngValue]="'rightTop'">RIGHT - TOP</option>
+                                        <option [ngValue]="'rightCenter'">RIGHT - CENTER</option>
+                                        <option [ngValue]="'rightBottom'">RIGHT - BOTTOM</option>
+                                        <option [ngValue]="'centerTop'">CENTER - TOP</option>
+                                        <option [ngValue]="'centerCenter'">CENTER - CENTER</option>
+                                        <option [ngValue]="'centerBottom'">CENTER - BOTTOM</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="projectinput2">Max on screen</label>
+                                    <input [(ngModel)]="dockMax" name="dockMax" type="number" id="dockMax" class="form-control" min="1">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="projectinput2">Max at position</label>
+                                    <input [(ngModel)]="blockMax" name="blockMax" type="number" id="blockMax" class="form-control" min="1">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="projectinput1">Toast Style</label>
+                                    <select [(ngModel)]="style" name="style" id="style" class="form-control">
+                                        <option [ngValue]="'material'">Material</option>
+                                        <option [ngValue]="'dark'">Dark</option>
+                                        <option [ngValue]="'simple'">Simple</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <div class="btn btn-success mr-1 btn-raised" (click)="onSuccess()">Success</div>
+                                    <div class="btn btn-info mr-1 btn-raised" (click)="onInfo()">Info</div>
+                                    <div class="btn btn-danger mr-1 btn-raised" (click)="onError()">Error</div>
+                                    <div class="btn btn-warning mr-1 btn-raised" (click)="onWarning()">Warning</div>
+                                    <div class="btn btn-primary mr-1 btn-raised" (click)="onSimple()">Simple</div>
+                                    <div class="btn btn-primary mr-1 btn-raised" (click)="onAsyncLoading()">Async</div>
+                                    <div class="btn btn-primary mr-1 btn-raised" (click)="onConfirmation()">Confirm</div>
+                                    <div class="btn btn-primary mr-1 btn-raised" (click)="onPrompt()">Prompt</div>
+                                    <div class="btn btn-primary mr-1 btn-raised" (click)="onHtml()">HTML</div>
+                                    <div class="btn btn-primary mr-1 btn-raised" (click)="onClear()">Clear all</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Toastr Ends-->

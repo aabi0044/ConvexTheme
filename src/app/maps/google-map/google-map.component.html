@@ -1,0 +1,27 @@
+<!--Basic google map starts-->
+<section id="map">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="content-header">Google Map</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-block mt-2">
+                        <agm-map [latitude]="lat" [longitude]="lng">
+                            <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+                            <agm-marker [latitude]="lat1" [longitude]="lng1"></agm-marker>
+                            <agm-marker [latitude]="lat2" [longitude]="lng2"></agm-marker>
+                            <agm-circle [latitude]="lat" [longitude]="lng + 0.7" [radius]="40000" [fillColor]="'red'" [circleDraggable]="true" [editable]="true">
+                            </agm-circle>
+                        </agm-map>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Basic google map ends-->

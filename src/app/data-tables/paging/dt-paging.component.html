@@ -1,0 +1,27 @@
+<!--Paging dataTable starts-->
+<section id="paging" class="mb-3">
+    <div class="row">
+        <div class="col-12">
+            <div class="content-header">Paging</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card">
+                <div class="card-header">
+                  <div class="card-title-wrap bar-info">
+                    <h4 class="card-title">Table Paging</h4>
+                  </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-block">
+                        <ngx-datatable class="bootstrap" [rows]="rows" [columns]="[{name:'Name'},{name:'Gender'},{name:'Company'}]" [columnMode]="'force'"
+                            [headerHeight]="50" [footerHeight]="50" [rowHeight]="'auto'" [limit]="10">
+                        </ngx-datatable>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Paging dataTable starts-->

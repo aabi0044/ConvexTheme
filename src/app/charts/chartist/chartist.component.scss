@@ -1,0 +1,77 @@
+@import "../../../assets/sass/scss/gradient-variables";
+
+:host /deep/ .ct-area {
+    stroke: none;
+    fill-opacity: 0.1;
+}
+
+:host /deep/ .ct-grid{
+    stroke-dasharray: 0px;
+    stroke: rgba(0, 0, 0, 0.1);
+}
+
+:host /deep/ .ct-label{
+    font-size: 0.9rem;
+}
+
+// Two Lines with Area Chart CSS Starts
+
+:host /deep/ .twoLinesArea .ct-series.ct-series-a .ct-area { fill: #FF9149; fill-opacity: 0.2 }
+:host /deep/ .twoLinesArea .ct-series.ct-series-a .ct-line { stroke: #FF9149; stroke-width: 3px; }
+:host /deep/ .twoLinesArea .ct-series.ct-series-a .ct-circle{fill:#FF9149;stroke-width:5;stroke:#fff;}
+
+:host /deep/ .twoLinesArea .ct-series.ct-series-b .ct-area { fill: #1E9FF2 }
+:host /deep/ .twoLinesArea .ct-series.ct-series-b .ct-line { stroke: #1E9FF2; stroke-width: 3px; }
+:host /deep/ .twoLinesArea .ct-series.ct-series-b .ct-circle{fill:#1E9FF2;stroke-width:5;stroke:#fff;}
+
+// Two Lines with Area Chart CSS Ends
+
+// Line with Area Chart CSS Starts
+
+:host /deep/ .lineArea .ct-series.ct-series-a .ct-area { fill: #FF4961; }
+:host /deep/ .lineArea .ct-series.ct-series-a .ct-line { stroke: #FF4961; stroke-width: 3px; }
+
+:host /deep/ .lineArea .ct-circle{fill:#FF4961;stroke-width:5;stroke:#fff;}
+
+// Line with Area Chart CSS Ends
+
+
+// LineArea Chart 5 CSS Starts
+    :host /deep/ .lineArea5 .ct-series-a .ct-area {
+    fill-opacity: 1;
+    fill:url($chartist-gradient-path +  #gradient3) !important;
+}
+
+:host /deep/ .lineArea5 .ct-line{
+    stroke-width: 0px;
+}
+
+// :host /deep/ .lineAreaChart5Shadow {
+//     -webkit-filter: drop-shadow( 0px 20px 26px rgba(0,0,0,0.3) );
+//             filter: drop-shadow( 0px 20px 26px rgba(0,0,0,0.3) ); /* Same syntax as box-shadow, except 
+//                                                        for the spread property */
+// }
+
+:host /deep/ .lineArea5 .ct-series-a .ct-point-circle {     
+   fill:#a389d1;stroke-width:3;stroke:rgba(186,191,199,0.3);
+}
+
+:host /deep/ .lineArea5 .ct-series-a .ct-point-circle-transperent {     
+   fill: transparent;
+}
+
+// LineArea Chart 5 CSS Ends
+
+
+
+// Line Chart CSS Starts
+
+:host /deep/ .lineChart .ct-series.ct-series-a .ct-line { stroke: url($chartist-gradient-path + #linear) !important; stroke-width: 5px; }
+:host /deep/ .lineChart .ct-series.ct-series-a .ct-circle{fill:url($chartist-gradient-path + #linear) !important;stroke-width:5;stroke:#fff;}
+:host /deep/ .lineChart .ct-series.ct-series-a .ct-circle-transperent{fill:transparent;stroke-width:0}
+:host /deep/ .lineChartShadow {
+    -webkit-filter: drop-shadow( 0px 20px 6px rgba(0,0,0,0.3) );
+            filter: drop-shadow( 0px 20px 6px rgba(0,0,0,0.3) ); /* Same syntax as box-shadow, except 
+                                                       for the spread property */
+}
+// Line Chart CSS Ends

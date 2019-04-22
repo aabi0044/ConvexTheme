@@ -1,0 +1,202 @@
+@import "../../../assets/sass/scss/gradient-variables";
+
+:host /deep/ .ct-grid{
+    stroke-dasharray: 0px;
+    stroke: rgba(0, 0, 0, 0.1);
+}
+
+:host /deep/ .ct-label{
+    font-size: 0.9rem;
+}
+
+// Line Chart CSS Starts
+
+:host /deep/ .lineChart .ct-series.ct-series-a .ct-line { stroke: url($eCommerce-gradient-path + #linear1) !important; stroke-width: 5px; }
+:host /deep/ .lineChart .ct-series.ct-series-a .ct-circle{fill:url($eCommerce-gradient-path + #linear1) !important;stroke-width:5;stroke:#fff;}
+:host /deep/ .lineChart .ct-series.ct-series-a .ct-circle-transperent{fill:transparent;stroke-width:0}
+:host /deep/ .lineChartShadow {
+    -webkit-filter: drop-shadow( 0px 20px 6px rgba(0,0,0,0.3) );
+            filter: drop-shadow( 0px 20px 6px rgba(0,0,0,0.3) ); /* Same syntax as box-shadow, except 
+                                                       for the spread property */
+}
+// Line Chart CSS Ends
+
+// Stack Bar Chart CSS Starts
+
+:host /deep/ .Stackbarchart{
+    .ct-series-a {
+        .ct-bar{
+            stroke: url($eCommerce-gradient-path +  #linear) !important
+        }
+         .ct-slice-bar{
+            fill: url($eCommerce-gradient-path +  #linear) !important
+        }
+    }    
+}
+
+
+// Stack Bar Chart CSS Ends
+
+
+
+ 
+  // Donut Chart  CSS Ends
+  :host /deep/ .donut .ct-done .ct-slice-donut-solid {
+    fill: url($eCommerce-gradient-path +  #donutGradient1);
+    // stroke-width: 28px !important;
+  }
+  :host /deep/ .donut .ct-progress .ct-slice-donut-solid {
+    fill: url($eCommerce-gradient-path +  #donutGradient2);
+    // stroke-width: 24px !important;
+  }
+  :host /deep/ .donut .ct-outstanding .ct-slice-donut-solid {
+    fill: url($eCommerce-gradient-path +  #donutGradient3);
+    // stroke-width: 24px !important;
+  }
+  
+
+  :host /deep/ .donut .ct-label {
+    text-anchor: middle;
+    alignment-baseline: middle;
+    font-size: 20px;
+    fill: #868e96;
+  }
+
+  :host /deep/ .donut .ct-chart-donut .ct-series {
+    stroke: #fff;
+    stroke-width: 3px;
+  }
+
+  :host /deep/ .donutShadow{
+    -webkit-filter: drop-shadow( 0px 20px 8px rgba(0,0,0,0.3) );
+    filter: drop-shadow( 0px 20px 8px rgba(0,0,0,0.3) ); /* Same syntax as box-shadow, except 
+                                               for the spread property */
+  }
+
+  // Donut Chart  CSS Ends
+
+  // Bar Chart CSS Starts
+
+  :host /deep/ .BarChart .ct-series-a .ct-bar:nth-of-type(5n+1),
+  :host /deep/ .BarChart .ct-series-a .ct-slice-bar:nth-of-type(5n+1) {
+    stroke: url($eCommerce-gradient-path +  #gradient7);
+    fill: url($eCommerce-gradient-path +  #gradient7);
+  }
+  :host /deep/ .BarChart .ct-series-a .ct-bar:nth-of-type(5n+2) , 
+   :host /deep/ .BarChart .ct-series-a .ct-slice-bar:nth-of-type(5n+2) {
+    stroke: url($eCommerce-gradient-path +  #gradient5);
+    fill: url($eCommerce-gradient-path +  #gradient5);
+  }
+  :host /deep/ .BarChart .ct-series-a .ct-bar:nth-of-type(5n+3),  
+   :host /deep/ .BarChart .ct-series-a .ct-slice-bar:nth-of-type(5n+3) {
+    stroke: url($eCommerce-gradient-path +  #gradient6);
+    fill: url($eCommerce-gradient-path +  #gradient6);
+  }
+  :host /deep/ .BarChart .ct-series-a .ct-bar:nth-of-type(5n+4),  
+   :host /deep/ .BarChart .ct-series-a .ct-slice-bar:nth-of-type(5n+4) {
+    stroke: url($eCommerce-gradient-path +  #gradient4);
+    fill: url($eCommerce-gradient-path +  #gradient4);
+  }
+  :host /deep/ .BarChart .ct-series-a .ct-bar:nth-of-type(5n+5),  
+   :host /deep/ .BarChart .ct-series-a .ct-slice-bar:nth-of-type(5n+5) {
+    stroke: url($eCommerce-gradient-path +  #gradient8);
+    fill: url($eCommerce-gradient-path +  #gradient8);
+  }
+
+
+  :host /deep/ .BarChartShadow {
+    -webkit-filter: drop-shadow( 0px 20px 8px rgba(0,0,0,0.3) );
+            filter: drop-shadow( 0px 20px 8px rgba(0,0,0,0.3) ); /* Same syntax as box-shadow, except 
+                                                       for the spread property */
+}
+
+// Bar Chart CSS Ends
+
+
+// Widget area 1 Chart CSS Starts
+
+:host /deep/ .WidgetAreaChart1 .ct-series-a .ct-area {
+    fill-opacity: 1;
+    fill:url($eCommerce-gradient-path +  #wGradient1) !important;
+}
+
+:host /deep/ .WidgetAreaChart1 .ct-series-a .ct-line{
+    stroke-width: 0px;
+}
+
+
+:host /deep/ .WidgetAreaChart1 .ct-series-a .ct-point-circle {     
+    fill:#fff;stroke-width:10;stroke: #8249e8;
+ }
+ 
+ :host /deep/ .WidgetAreaChart1 .ct-series-a .ct-point-circle-transperent {     
+    fill: transparent;
+ }
+
+ :host /deep/ .WidgetAreaChart1 .ct-target-line {
+    stroke: #fff;
+    stroke-width: 2px;
+    stroke-dasharray: 4px;
+  }
+
+
+// Widget area 1 Chart CSS Ends
+
+// Widget area 2 Chart CSS Starts
+
+:host /deep/ .WidgetAreaChart2 .ct-series-a .ct-area {
+    fill-opacity: 1;
+    fill:url($eCommerce-gradient-path +  #wGradient2) !important;
+}
+
+:host /deep/ .WidgetAreaChart2 .ct-series-a .ct-line{
+    stroke-width: 0px;
+}
+
+
+:host /deep/ .WidgetAreaChart2 .ct-series-a .ct-point-circle {     
+    fill:#fff;stroke-width:10;stroke: #fa5b4c;
+ }
+ 
+ :host /deep/ .WidgetAreaChart2 .ct-series-a .ct-point-circle-transperent {     
+    fill: transparent;
+ }
+
+ :host /deep/ .WidgetAreaChart2 .ct-target-line {
+    stroke: #fff;
+    stroke-width: 2px;
+    stroke-dasharray: 4px;
+  }
+
+
+// Widget area 2 Chart CSS Ends
+
+// Widget area 3 Chart CSS Starts
+
+:host /deep/ .WidgetAreaChart3 .ct-series-a .ct-area {
+    fill-opacity: 1;
+    fill:url($eCommerce-gradient-path +  #wGradient3) !important;
+}
+
+:host /deep/ .WidgetAreaChart3 .ct-series-a .ct-line{
+    stroke-width: 0px;
+}
+
+
+:host /deep/ .WidgetAreaChart3 .ct-series-a .ct-point-circle {     
+    fill:#fff;stroke-width:10;stroke: #19667d;
+ }
+ 
+ :host /deep/ .WidgetAreaChart3 .ct-series-a .ct-point-circle-transperent {     
+    fill: transparent;
+ }
+
+ :host /deep/ .WidgetAreaChart3 .ct-target-line {
+    stroke: #fff;
+    stroke-width: 2px;
+    stroke-dasharray: 4px;
+  }
+
+
+// Widget area 3 Chart CSS Ends
+

@@ -1,0 +1,140 @@
+<section id="switch">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="content-header">Switch</div>
+      <p class="content-sub-header"></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xl-6 col-lg-6 col-12">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title-wrap bar-success">
+            <h4 class="card-title">Checked</h4>
+            <p class="card-subtitle">Use <code>checked</code> attribute Or <code>[checked]="false"</code>, for default switch.</p>
+          </div>
+        </div>
+        <div class="card-block">
+          <div>
+            <ui-switch checked class="mr-1"></ui-switch>
+            <ui-switch [checked]="false"></ui-switch>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-6 col-lg-6 col-12">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title-wrap bar-danger">
+            <h4 class="card-title">Reverse</h4>
+            <p class="card-subtitle">Use <code>reverse</code> attribute to make it work like reverse switch.</p>
+          </div>
+        </div>
+        <div class="card-block">
+          <div>
+            <ui-switch reverse></ui-switch>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-6 col-lg-6 col-12">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title-wrap bar-primary">
+            <h4 class="card-title">Two way binding</h4>
+            <p class="card-subtitle">For Two way binding switch, use <code>[(ngModel)]="enable"</code>.</p>
+          </div>
+        </div>
+        <div class="card-block">
+          <div>
+            <ui-switch [(ngModel)]="enable"></ui-switch> 
+            <p>{{enable}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-6 col-lg-6 col-12">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title-wrap bar-warning">
+            <h4 class="card-title">Change</h4>
+            <p class="card-subtitle">On change event of switch set counter using <code>(change)="onChange()"</code>.</p>
+          </div>
+        </div>
+        <div class="card-block">
+          <div>
+            <ui-switch (change)="onChange()"></ui-switch> 
+            <p>change count {{count}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-6 col-lg-6 col-12">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title-wrap bar-info">
+            <h4 class="card-title">Disabled</h4>
+            <p class="card-subtitle">Use <code>disabled</code> attribute Or <code>[disabled]="true"</code>, for disabled switch.</p>
+          </div>
+        </div>
+        <div class="card-block">
+          <div>
+            <ui-switch disabled class="mr-1"></ui-switch>
+            <ui-switch checked [disabled]="true"></ui-switch>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-6 col-lg-6 col-12">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title-wrap bar-success">
+            <h4 class="card-title">Size</h4>
+            <p class="card-subtitle">Use <code>size="small"</code> for small switch and <code>size="large"</code>, for large switch.</p>
+          </div>
+        </div>
+        <div class="card-block">
+          <div>
+            <ui-switch size="small" class="mr-1"></ui-switch>
+            <ui-switch class="mr-1"></ui-switch>
+            <ui-switch size="large"></ui-switch>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <div class="col-xl-6 col-lg-6 col-12">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title-wrap bar-danger">
+            <h4 class="card-title">color</h4>
+            <p class="card-subtitle">Use <code>color</code> attribute to make switch colorful.</p>
+          </div>
+        </div>
+        <div class="card-block">
+          <div>
+            <ui-switch class="mr-1"></ui-switch>
+            <ui-switch color="grey" class="mr-1"></ui-switch>
+            <ui-switch color="pink"></ui-switch>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-6 col-lg-6 col-12">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title-wrap bar-primary">
+            <h4 class="card-title">switchColor</h4>
+            <p class="card-subtitle">Use <code>switchColor</code> attribute to make switch toggle colorful.</p>
+          </div>
+        </div>
+        <div class="card-block">
+          <div>
+            <ui-switch switchColor="pink" class="mr-1"></ui-switch>
+            <ui-switch switchColor="grey" class="mr-1"></ui-switch>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
